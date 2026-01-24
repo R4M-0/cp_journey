@@ -34,7 +34,7 @@ ll modpow(ll a, ll e, ll mod = MOD) {
     return r;
 }
 
-ll suffix_sum(vll v , ll n ,ll m){
+ll suffix_sum(const vll &v , ll n ,ll m){
 	if(n==m) return v[n];
 	return v[n]+suffix_sum(v,n-1,m);
 }
